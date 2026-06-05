@@ -1,0 +1,5 @@
+Retrieval Augmented Generation (RAG) combines a retriever and a language model.
+The retriever finds relevant document chunks from a vector database.
+The language model then generates an answer grounded in those chunks.
+This reduces hallucination because answers are based on real retrieved context.
+ChromaDB is a popular open-source vector database used to store embeddings.
