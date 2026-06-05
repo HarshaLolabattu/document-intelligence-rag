@@ -62,8 +62,8 @@ Example query request:
   "question": "What is RAG and how does it reduce hallucination?"
 }
 ```
-
 ## Author
 
-Harsha Adinaraynaraju
+**Harsha Adinaraynaraju**
+
 Email: harshaadinarayana@gmail.com
