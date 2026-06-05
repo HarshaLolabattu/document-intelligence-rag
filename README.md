@@ -21,3 +21,49 @@ hallucination on domain-specific queries.
 Python, LangChain, OpenAI API, ChromaDB, FastAPI, Retrieval Augmented Generation (RAG)
 
 ## Architecture
+
+## Setup
+
+1. Clone the repository:
+```bash
+   git clone https://github.com/HarshaLolabattu/document-intelligence-rag.git
+   cd document-intelligence-rag
+```
+
+2. Install dependencies:
+```bash
+   pip install -r requirements.txt
+```
+
+3. Configure your OpenAI API key:
+```bash
+   cp .env.example .env
+   # edit .env and add your real OPENAI_API_KEY
+```
+
+## Usage
+
+Run the FastAPI server:
+```bash
+uvicorn src.api:app --reload
+```
+
+Then open the interactive docs at http://localhost:8000/docs
+
+### Endpoints
+
+- `GET /` - health check
+- `POST /ingest` - upload a PDF or TXT file to ingest into the vector store
+- `POST /query` - ask a question and receive an answer grounded in the documents
+
+Example query request:
+```json
+{
+  "question": "What is RAG and how does it reduce hallucination?"
+}
+```
+
+## Author
+
+Harsha Adinaraynaraju
+Email: harshaadinarayana@gmail.com
