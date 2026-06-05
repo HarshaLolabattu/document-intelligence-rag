@@ -20,7 +20,7 @@ hallucination on domain-specific queries.
 
 Python, LangChain, OpenAI API, ChromaDB, FastAPI, Retrieval Augmented Generation (RAG)
 
-## Architecture
+## Project Structure
 
 ## Setup
 
